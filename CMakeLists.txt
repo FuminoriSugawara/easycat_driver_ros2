@@ -5,6 +5,7 @@ find_package(rclcpp REQUIRED)
 find_package(ethercat_driver REQUIRED)
 find_package(ethercat_interface REQUIRED)
 find_package(ethercat_generic_cia402_drive REQUIRED)
+find_package(custom_effort_controller REQUIRED)
 
 install(
   DIRECTORY config description launch

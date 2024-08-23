@@ -15,7 +15,8 @@ controller_manager:
       type: velocity_controllers/JointGroupVelocityController
 
     effort_controller:
-      type: effort_controllers/JointGroupEffortController
+      #type: effort_controllers/JointGroupEffortController
+      type: custom_effort_controller/CustomEffortController
 
 
 position_controller:
@@ -47,6 +48,11 @@ velocity_controller:
   ros__parameters:
     joints:
       - joint_1
+      - joint_2
+      - joint_3
+      - joint_4
+      - joint_5
+      - joint_6
     command_interfaces:
       - velocity
     state_interfaces:
@@ -57,5 +63,14 @@ effort_controller:
   ros__parameters:
     joints:
       - joint_1
-    #state_interfaces:
-    #  - effort
+      - joint_2
+      - joint_3
+      - joint_4
+      - joint_5
+      - joint_6
+    command_interfaces:
+      - effort
+    state_interfaces:
+      - position
+      - velocity
+      - effort
