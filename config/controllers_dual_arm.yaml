@@ -1,0 +1,92 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 1000  # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    position_controller:
+      type: position_controllers/JointGroupPositionController
+
+    velocity_controller:
+      type: velocity_controllers/JointGroupVelocityController
+
+    effort_controller:
+      type: effort_controllers/JointGroupEffortController
+      #type: custom_effort_controller/CustomEffortController
+
+
+position_controller:
+  ros__parameters:
+    joints:
+      - joint_1
+      - joint_2
+      - joint_3
+      - joint_4
+      - joint_5
+      - joint_6
+
+trajectory_controller:
+  ros__parameters:
+    joints:
+      - left_joint_1
+      - left_joint_2
+      - left_joint_3
+      - left_joint_4
+      - left_joint_5
+      - left_joint_6
+      - left_joint_7
+      - right_joint_1
+      - right_joint_2
+      - right_joint_3
+      - right_joint_4
+      - right_joint_5
+      - right_joint_6
+      - right_joint_7
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+
+
+velocity_controller:
+  ros__parameters:
+    joints:
+      - joint_1
+      - joint_2
+      - joint_3
+      - joint_4
+      - joint_5
+      - joint_6
+    command_interfaces:
+      - velocity
+    state_interfaces:
+      - position
+      - velocity
+
+effort_controller:
+  ros__parameters:
+    joints:
+      - left_joint_1
+      - left_joint_2
+      - left_joint_3
+      - left_joint_4
+      - left_joint_5
+      - left_joint_6
+      - left_joint_7
+      - right_joint_1
+      - right_joint_2
+      - right_joint_3
+      - right_joint_4
+      - right_joint_5
+      - right_joint_6
+      - right_joint_7
+    command_interfaces:
+      - effort
+    state_interfaces:
+      - position
+      - velocity
+      - effort
