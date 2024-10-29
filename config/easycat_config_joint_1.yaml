@@ -1,7 +1,7 @@
 # Configuration file for EasyCAT
 vendor_id: 0x0000079A
 product_id: 0xabe00001
-assign_activate: 0x003c # DC Synch register
+assign_activate: 0x300 # DC Synch register
 auto_fault_reset: true  # true = automatic fault reset, false = fault reset on rising edge command interface "reset_fault"
 
 rpdo:  # RxPDO = receive PDO Mapping
@@ -51,7 +51,7 @@ tpdo:  # TxPDO = transmit PDO Mapping
       - {index: 0x0006, sub_index: 6,  type: int32}
       - {index: 0x0006, sub_index: 7,  type: int32}
       - {index: 0x0006, sub_index: 8,  type: int32}  
-      - {index: 0x0006, sub_index: 9,  type: int32}  
+      - {index: 0x0006, sub_index: 9,  type: int32, state_interface: velocity}  
       - {index: 0x0006, sub_index: 10, type: int32}  
       - {index: 0x0006, sub_index: 11, type: int32}  
       - {index: 0x0006, sub_index: 12, type: int32}  
@@ -59,7 +59,7 @@ tpdo:  # TxPDO = transmit PDO Mapping
       - {index: 0x0006, sub_index: 14, type: int32}  
       - {index: 0x0006, sub_index: 15, type: int32}  
       - {index: 0x0006, sub_index: 16, type: int32}  
-      - {index: 0x0006, sub_index: 17, type: int32}  
+      - {index: 0x0006, sub_index: 17, type: int32, state_interface: effort}  
       - {index: 0x0006, sub_index: 18, type: int32}  
       - {index: 0x0006, sub_index: 19, type: int32}  
       - {index: 0x0006, sub_index: 20, type: int32}  
