@@ -30,6 +30,7 @@ position_controller:
       - joint_4
       - joint_5
       - joint_6
+      - joint_7
     command_interfaces:
       - position
     state_interfaces:
@@ -55,6 +56,7 @@ trajectory_controller:
       - joint_4
       - joint_5
       - joint_6
+      - joint_7
     command_interfaces:
       - position
     state_interfaces:
@@ -73,12 +75,20 @@ velocity_controller:
       - joint_4
       - joint_5
       - joint_6
+      - joint_7
     command_interfaces:
       - velocity
     state_interfaces:
       - position
       - velocity
       - effort
+    target_joints:
+      - joint_1
+    amplitudes:
+      - 1000.0
+    frequencies:
+      - 0.1
+
 
 effort_controller:
   ros__parameters:
@@ -89,9 +99,16 @@ effort_controller:
       - joint_4
       - joint_5
       - joint_6
+      - joint_7
     command_interfaces:
       - effort
     state_interfaces:
       - position
       - velocity
       - effort
+    target_joints:
+      - joint_1
+    amplitudes:
+      - 600.0
+    frequencies:
+      - 0.1
