@@ -9,25 +9,49 @@ controller_manager:
       type: joint_trajectory_controller/JointTrajectoryController
 
     position_controller:
-      type: position_controllers/JointGroupPositionController
+      #type: position_controllers/JointGroupPositionController
+      type: custom_position_controller/CustomPositionController
 
     velocity_controller:
-      type: velocity_controllers/JointGroupVelocityController
+      #type: velocity_controllers/JointGroupVelocityController
+      type: custom_velocity_controller/CustomVelocityController
 
     effort_controller:
-      type: effort_controllers/JointGroupEffortController
-      #type: custom_effort_controller/CustomEffortController
+      #type: effort_controllers/JointGroupEffortController
+      type: custom_effort_controller/CustomEffortController
 
 
 position_controller:
   ros__parameters:
     joints:
-      - joint_1
-      - joint_2
-      - joint_3
-      - joint_4
-      - joint_5
-      - joint_6
+      - left_joint_1
+      - left_joint_2
+      - left_joint_3
+      - left_joint_4
+      - left_joint_5
+      - left_joint_6
+      - left_joint_7
+      - right_joint_1
+      - right_joint_2
+      - right_joint_3
+      - right_joint_4
+      - right_joint_5
+      - right_joint_6
+      - right_joint_7
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+      - effort
+    target_joints:
+      - left_joint_1
+    amplitudes:
+      - 1000.0
+    frequencies:
+      - 0.1
+    homing_velocity: 0.1
+    position_tolerance: 1.0
 
 trajectory_controller:
   ros__parameters:

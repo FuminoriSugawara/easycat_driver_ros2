@@ -12,6 +12,8 @@
 
       <joint name="joint_1">
         <state_interface name="position"/>
+        <state_interface name="velocity"/>
+        <state_interface name="effort" />
         <command_interface name="position"/>
         <ec_module name="easycat">
           <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
@@ -23,6 +25,8 @@
       </joint>
       <joint name="joint_2">
         <state_interface name="position"/>
+        <state_interface name="velocity"/>
+        <state_interface name="effort" />
         <command_interface name="position"/>
         <ec_module name="easycat">
           <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
@@ -34,6 +38,8 @@
       </joint>
       <joint name="joint_3">
         <state_interface name="position"/>
+        <state_interface name="velocity"/>
+        <state_interface name="effort" />
         <command_interface name="position"/>
         <ec_module name="easycat">
           <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
@@ -45,6 +51,8 @@
       </joint>
       <joint name="joint_4">
         <state_interface name="position"/>
+        <state_interface name="velocity"/>
+        <state_interface name="effort" />
         <command_interface name="position"/>
         <ec_module name="easycat">
           <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
@@ -56,6 +64,8 @@
       </joint>
       <joint name="joint_5">
         <state_interface name="position"/>
+        <state_interface name="velocity"/>
+        <state_interface name="effort" />
         <command_interface name="position"/>
         <ec_module name="easycat">
           <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
@@ -67,6 +77,8 @@
       </joint>
       <joint name="joint_6">
         <state_interface name="position"/>
+        <state_interface name="velocity"/>
+        <state_interface name="effort" />
         <command_interface name="position"/>
         <ec_module name="easycat">
           <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
@@ -74,6 +86,19 @@
           <param name="position">0</param>
           <param name="mode_of_operation">9</param>
           <param name="slave_config">$(find ethercat_easycat)/config/easycat_config_joint_6.yaml</param>
+        </ec_module>
+      </joint>
+      <joint name="joint_7">
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+        <state_interface name="effort" />
+        <command_interface name="position"/>
+        <ec_module name="easycat">
+          <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
+          <param name="alias">0</param>
+          <param name="position">0</param>
+          <param name="mode_of_operation">9</param>
+          <param name="slave_config">$(find ethercat_easycat)/config/easycat_config_joint_7.yaml</param>
         </ec_module>
       </joint>
     </ros2_control>

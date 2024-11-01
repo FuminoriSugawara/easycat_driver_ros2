@@ -1,7 +1,7 @@
 
 from launch import LaunchDescription
 from launch.substitutions import Command, FindExecutable, PathJoinSubstitution, LaunchConfiguration
-from launch.actions import DeclareLaunchArgument
+from launch.actions import DeclareLaunchArgument, ExecuteProcess
 
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
@@ -70,11 +70,11 @@ def generate_launch_description():
         arguments=["trajectory_controller", "-c", "/controller_manager"],
     )
 
-    # position_controller_spawner = Node(
-    #     package="controller_manager",
-    #     executable="spawner",
-    #     arguments=["position_controller", "-c", "/controller_manager"],
-    # )
+    position_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["position_controller", "-c", "/controller_manager"],
+    )
 
     # velocity_controller_spawner = Node(
     #     package="controller_manager",
@@ -88,14 +88,20 @@ def generate_launch_description():
     #     arguments=["effort_controller", "-c", "/controller_manager"],
     # )
 
+    rosbag2 = ExecuteProcess(
+        cmd=['ros2', 'bag', 'record', '-a'],
+        output='screen'
+    )
+
     nodes = [
         control_node,
         robot_state_pub_node,
         joint_state_broadcaster_spawner,
-        trajectory_controller_spawner,
-        #position_controller_spawner,
+        #trajectory_controller_spawner,
+        position_controller_spawner,
         #velocity_controller_spawner,
         # effort_controller_spawner,
+        rosbag2
     ]
 
     return LaunchDescription(
