@@ -40,9 +40,14 @@ position_controller:
     target_joints:
       - joint_1
     amplitudes:
-      - 300000.0
+      - 1800000.0
     frequencies:
-      - 0.1
+      # 低速
+      #- 0.025
+      # 中速
+      #- 0.05
+      # 高速
+      - 0.10
     homing_velocity: 10000.0
     position_tolerance: 300.0
 
@@ -85,9 +90,16 @@ velocity_controller:
     target_joints:
       - joint_1
     amplitudes:
-      - 1000.0
+      # 低速
+      #- 5000.0
+      # 中速
+      #- 10000.0
+      # 高速
+      - 30000.0
     frequencies:
-      - 0.1
+      - 1.0
+    homing_velocity: 1000.0
+    position_tolerance: 1000.0
 
 
 effort_controller:
@@ -109,6 +121,13 @@ effort_controller:
     target_joints:
       - joint_1
     amplitudes:
-      - 600.0
+      # 低速
+      #- 1000.0
+      # 中速
+      #- 2000.0
+      # 高速
+      - 3000.0
     frequencies:
-      - 0.1
+      - 1.0
+    homing_effort: 600.0
+    position_tolerance: 1000.0
