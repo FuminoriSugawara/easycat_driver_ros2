@@ -3,7 +3,7 @@
 
   <link name="world"/>
 
-  <xacro:include filename="$(find ethercat_easycat)/description/ros2_control/easycat.ros2_control.xacro" />
+  <xacro:include filename="$(find ethercat_easycat)/description/ros2_control/easycat_dynamic.ros2_control.xacro" />
 
   <xacro:ethercat_easycat/>
 </robot>

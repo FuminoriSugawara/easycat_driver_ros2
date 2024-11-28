@@ -14,7 +14,7 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             'description_file',
-            default_value='easycat.config.xacro',
+            default_value='easycat_dynamic.config.xacro',
             description='URDF/XACRO description file with the axis.',
         )
     )
@@ -41,7 +41,7 @@ def generate_launch_description():
         [
             FindPackageShare("ethercat_easycat"),
             "config",
-            "controllers.yaml",
+            "controllers_dynamic.yaml",
         ]
     )
 
@@ -51,6 +51,7 @@ def generate_launch_description():
         parameters=[robot_description, robot_controllers],
         output="both",
     )
+
     robot_state_pub_node = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
@@ -64,29 +65,11 @@ def generate_launch_description():
         arguments=["joint_state_broadcaster", "-c", "/controller_manager"],
     )
 
-    trajectory_controller_spawner = Node(
+    dynamic_controller_spawner = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=["trajectory_controller", "-c", "/controller_manager"],
+        arguments=["dynamic_controller", "-c", "/controller_manager"],
     )
-
-    position_controller_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["position_controller", "-c", "/controller_manager"],
-    )
-
-    # velocity_controller_spawner = Node(
-    #     package="controller_manager",
-    #     executable="spawner",
-    #     arguments=["velocity_controller", "-c", "/controller_manager"],
-    # )
-
-    # effort_controller_spawner = Node(
-    #     package="controller_manager",
-    #     executable="spawner",
-    #     arguments=["effort_controller", "-c", "/controller_manager"],
-    # )
 
     rosbag2 = ExecuteProcess(
         cmd=['ros2', 'bag', 'record', '-a'],
@@ -97,10 +80,7 @@ def generate_launch_description():
         control_node,
         robot_state_pub_node,
         joint_state_broadcaster_spawner,
-        #trajectory_controller_spawner,
-        position_controller_spawner,
-        #velocity_controller_spawner,
-        # effort_controller_spawner,
+        dynamic_controller_spawner,
         rosbag2
     ]
 
