@@ -31,14 +31,14 @@ rpdo:  # RxPDO = receive PDO Mapping
       - {index: 0x0005, sub_index: 22, type: int32, default: .nan}  
       - {index: 0x0005, sub_index: 23, type: int32, default: .nan}  
       - {index: 0x0005, sub_index: 24, type: int32, default: .nan}  
-      - {index: 0x0005, sub_index: 25, type: uint16, default: 0}
-      - {index: 0x0005, sub_index: 26, type: uint16, default: 0}
-      - {index: 0x0005, sub_index: 27, type: uint16, default: 0} # Control word
-      - {index: 0x0005, sub_index: 28, type: uint16, default: 0}
-      - {index: 0x0005, sub_index: 29, type: uint16, default: 0}
-      - {index: 0x0005, sub_index: 30, type: uint16, default: 0}
-      - {index: 0x0005, sub_index: 31, type: uint16, default: 0}
-      - {index: 0x0005, sub_index: 32, type: uint16, default: 0}
+      - {index: 0x0005, sub_index: 25, type: uint16, default: .nan}
+      - {index: 0x0005, sub_index: 26, type: uint16, default: .nan}
+      - {index: 0x0005, sub_index: 27, type: uint16, default: .nan, command_interface: control_word} # Control word
+      - {index: 0x0005, sub_index: 28, type: uint16, default: .nan}
+      - {index: 0x0005, sub_index: 29, type: uint16, default: .nan}
+      - {index: 0x0005, sub_index: 30, type: uint16, default: .nan}
+      - {index: 0x0005, sub_index: 31, type: uint16, default: .nan}
+      - {index: 0x0005, sub_index: 32, type: uint16, default: .nan}
 
 tpdo:  # TxPDO = transmit PDO Mapping 
   - index: 0x1A00
@@ -69,7 +69,7 @@ tpdo:  # TxPDO = transmit PDO Mapping
       - {index: 0x0006, sub_index: 24, type: int32}  
       - {index: 0x0006, sub_index: 25, type: uint16}
       - {index: 0x0006, sub_index: 26, type: uint16}
-      - {index: 0x0006, sub_index: 27, type: uint16} # Status word
+      - {index: 0x0006, sub_index: 27, type: uint16, state_interface: status} # Status word
       - {index: 0x0006, sub_index: 28, type: uint16}
       - {index: 0x0006, sub_index: 29, type: uint16}
       - {index: 0x0006, sub_index: 30, type: uint16}

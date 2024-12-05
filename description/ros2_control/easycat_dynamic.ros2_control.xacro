@@ -24,7 +24,7 @@
           <param name="alias">0</param>
           <param name="position">0</param>
           <param name="mode_of_operation">9</param>
-          <param name="slave_config">$(find ethercat_easycat)/config/easycat_config_joint_1_dynamic.yaml</param>
+          <param name="slave_config">$(find ethercat_easycat)/config/easycat_config_joint_1.yaml</param>
         </ec_module>
       </joint>
       <joint name="joint_2">
@@ -41,7 +41,7 @@
           <param name="alias">0</param>
           <param name="position">0</param>
           <param name="mode_of_operation">9</param>
-          <param name="slave_config">$(find ethercat_easycat)/config/easycat_config_joint_2_dynamic.yaml</param>
+          <param name="slave_config">$(find ethercat_easycat)/config/easycat_config_joint_2.yaml</param>
         </ec_module>
       </joint>
       <joint name="joint_3">
@@ -58,7 +58,7 @@
           <param name="alias">0</param>
           <param name="position">0</param>
           <param name="mode_of_operation">9</param>
-          <param name="slave_config">$(find ethercat_easycat)/config/easycat_config_joint_3_dynamic.yaml</param>
+          <param name="slave_config">$(find ethercat_easycat)/config/easycat_config_joint_3.yaml</param>
         </ec_module>
       </joint>
       <joint name="joint_4">
@@ -75,7 +75,7 @@
           <param name="alias">0</param>
           <param name="position">0</param>
           <param name="mode_of_operation">9</param>
-          <param name="slave_config">$(find ethercat_easycat)/config/easycat_config_joint_4_dynamic.yaml</param>
+          <param name="slave_config">$(find ethercat_easycat)/config/easycat_config_joint_4.yaml</param>
         </ec_module>
       </joint>
       <joint name="joint_5">
@@ -92,7 +92,7 @@
           <param name="alias">0</param>
           <param name="position">0</param>
           <param name="mode_of_operation">9</param>
-          <param name="slave_config">$(find ethercat_easycat)/config/easycat_config_joint_5_dynamic.yaml</param>
+          <param name="slave_config">$(find ethercat_easycat)/config/easycat_config_joint_5.yaml</param>
         </ec_module>
       </joint>
       <joint name="joint_6">
@@ -109,7 +109,7 @@
           <param name="alias">0</param>
           <param name="position">0</param>
           <param name="mode_of_operation">9</param>
-          <param name="slave_config">$(find ethercat_easycat)/config/easycat_config_joint_6_dynamic.yaml</param>
+          <param name="slave_config">$(find ethercat_easycat)/config/easycat_config_joint_6.yaml</param>
         </ec_module>
       </joint>
       <joint name="joint_7">
@@ -126,7 +126,7 @@
           <param name="alias">0</param>
           <param name="position">0</param>
           <param name="mode_of_operation">9</param>
-          <param name="slave_config">$(find ethercat_easycat)/config/easycat_config_joint_7_dynamic.yaml</param>
+          <param name="slave_config">$(find ethercat_easycat)/config/easycat_config_joint_7.yaml</param>
         </ec_module>
       </joint>
     </ros2_control>
