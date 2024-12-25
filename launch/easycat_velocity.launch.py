@@ -14,7 +14,7 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             'description_file',
-            default_value='easycat_velocity.config.xacro',
+            default_value='easycat.config.xacro',
             description='URDF/XACRO description file with the axis.',
         )
     )

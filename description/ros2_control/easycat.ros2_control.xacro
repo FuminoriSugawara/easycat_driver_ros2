@@ -14,7 +14,10 @@
         <state_interface name="position"/>
         <state_interface name="velocity"/>
         <state_interface name="effort" />
+        <state_interface name="encoder_diff"/>
         <command_interface name="position"/>
+        <command_interface name="velocity"/>
+        <command_interface name="effort"/>
         <ec_module name="easycat">
           <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
           <param name="alias">0</param>
@@ -27,7 +30,10 @@
         <state_interface name="position"/>
         <state_interface name="velocity"/>
         <state_interface name="effort" />
+        <state_interface name="encoder_diff"/>
         <command_interface name="position"/>
+        <command_interface name="velocity"/>
+        <command_interface name="effort"/>
         <ec_module name="easycat">
           <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
           <param name="alias">0</param>
@@ -40,7 +46,10 @@
         <state_interface name="position"/>
         <state_interface name="velocity"/>
         <state_interface name="effort" />
+        <state_interface name="encoder_diff"/>
         <command_interface name="position"/>
+        <command_interface name="velocity"/>
+        <command_interface name="effort"/>
         <ec_module name="easycat">
           <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
           <param name="alias">0</param>
@@ -53,7 +62,10 @@
         <state_interface name="position"/>
         <state_interface name="velocity"/>
         <state_interface name="effort" />
+        <state_interface name="encoder_diff"/>
         <command_interface name="position"/>
+        <command_interface name="velocity"/>
+        <command_interface name="effort"/>
         <ec_module name="easycat">
           <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
           <param name="alias">0</param>
@@ -66,7 +78,10 @@
         <state_interface name="position"/>
         <state_interface name="velocity"/>
         <state_interface name="effort" />
+        <state_interface name="encoder_diff"/>
         <command_interface name="position"/>
+        <command_interface name="velocity"/>
+        <command_interface name="effort"/>
         <ec_module name="easycat">
           <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
           <param name="alias">0</param>
@@ -79,7 +94,10 @@
         <state_interface name="position"/>
         <state_interface name="velocity"/>
         <state_interface name="effort" />
+        <state_interface name="encoder_diff"/>
         <command_interface name="position"/>
+        <command_interface name="velocity"/>
+        <command_interface name="effort"/>
         <ec_module name="easycat">
           <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
           <param name="alias">0</param>
@@ -92,7 +110,10 @@
         <state_interface name="position"/>
         <state_interface name="velocity"/>
         <state_interface name="effort" />
+        <state_interface name="encoder_diff"/>
         <command_interface name="position"/>
+        <command_interface name="velocity"/>
+        <command_interface name="effort"/>
         <ec_module name="easycat">
           <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
           <param name="alias">0</param>
