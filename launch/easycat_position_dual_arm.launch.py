@@ -64,11 +64,11 @@ def generate_launch_description():
         arguments=["joint_state_broadcaster", "-c", "/controller_manager"],
     )
 
-    trajectory_controller_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["trajectory_controller", "-c", "/controller_manager"],
-    )
+    # trajectory_controller_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner",
+    #     arguments=["trajectory_controller", "-c", "/controller_manager"],
+    # )
 
     position_controller_spawner = Node(
         package="controller_manager",

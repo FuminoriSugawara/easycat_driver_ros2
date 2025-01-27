@@ -14,7 +14,7 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             'description_file',
-            default_value='easycat_torque_dual_arm.config.xacro',
+            default_value='easycat_dual_arm.config.xacro',
             description='URDF/XACRO description file with the axis.',
         )
     )
