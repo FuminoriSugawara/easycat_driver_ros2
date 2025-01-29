@@ -49,60 +49,48 @@ position_controller:
     target_joints:
       - left_joint_1
       - left_joint_2
+      - left_joint_3
+      - left_joint_4
+      - left_joint_5
+      - left_joint_6
+      - left_joint_7
+      - right_joint_1
+      - right_joint_2
+      - right_joint_3
       - right_joint_4
       - right_joint_5
-      #- left_joint_1
-      #- left_joint_2
-      #- left_joint_3
-      #- left_joint_4
-      #- left_joint_5
-      #- left_joint_6
-      #- left_joint_7
-      #- right_joint_1
-      #- right_joint_2
-      #- right_joint_3
-      #- right_joint_4
-      #- right_joint_5
-      #- right_joint_6
-      #- right_joint_7
+      - right_joint_6
+      - right_joint_7
     amplitudes:
       - 100000.0
       - 100000.0
       - 100000.0
       - 100000.0
-      #- 100000.0
-      #- 100000.0
-      #- 100000.0
-      #- 100000.0
-      #- 100000.0
-      #- 100000.0
-      #- 100000.0
-      #- 100000.0
-      #- 100000.0
-      #- 100000.0
-      #- 100000.0
-      #- 100000.0
-      #- 100000.0
-      #- 100000.0
+      - 100000.0
+      - 100000.0
+      - 100000.0
+      - 100000.0
+      - 100000.0
+      - 100000.0
+      - 100000.0
+      - 100000.0
+      - 100000.0
+      - 100000.0
     frequencies:
       - 0.025
       - 0.025
       - 0.025
       - 0.025
-      #- 0.025
-      #- 0.025
-      #- 0.025
-      #- 0.025
-      #- 0.025
-      #- 0.025
-      #- 0.025
-      #- 0.025
-      #- 0.025
-      #- 0.025
-      #- 0.025
-      #- 0.025
-      #- 0.025
-      #- 0.025
+      - 0.025
+      - 0.025
+      - 0.025
+      - 0.025
+      - 0.025
+      - 0.025
+      - 0.025
+      - 0.025
+      - 0.025
+      - 0.025
     homing_velocity: 10000.0
     position_tolerance: 10000.0
 
@@ -157,60 +145,48 @@ velocity_controller:
     target_joints:
       - left_joint_1
       - left_joint_2
+      - left_joint_3
+      - left_joint_4
+      - left_joint_5
+      - left_joint_6
+      - left_joint_7
+      - right_joint_1
+      - right_joint_2
+      - right_joint_3
       - right_joint_4
       - right_joint_5
-      #- left_joint_1
-      #- left_joint_2
-      #- left_joint_3
-      #- left_joint_4
-      #- left_joint_5
-      #- left_joint_6
-      #- left_joint_7
-      #- right_joint_1
-      #- right_joint_2
-      #- right_joint_3
-      #- right_joint_4
-      #- right_joint_5
-      #- right_joint_6
-      #- right_joint_7
+      - right_joint_6
+      - right_joint_7
     amplitudes:
       - 5000.0
       - 5000.0
       - 5000.0
       - 5000.0
-      #- 5000.0
-      #- 5000.0
-      #- 5000.0
-      #- 5000.0
-      #- 5000.0
-      #- 5000.0
-      #- 5000.0
-      #- 5000.0
-      #- 5000.0
-      #- 5000.0
-      #- 5000.0
-      #- 5000.0
-      #- 5000.0
-      #- 5000.0
+      - 5000.0
+      - 5000.0
+      - 5000.0
+      - 5000.0
+      - 5000.0
+      - 5000.0
+      - 5000.0
+      - 5000.0
+      - 5000.0
+      - 5000.0
     frequencies:
       - 1.0
       - 1.0
       - 1.0
       - 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
     homing_velocity: 1000.0
     position_tolerance: 10000.0
 
@@ -242,59 +218,47 @@ effort_controller:
     target_joints:
       - left_joint_1
       - left_joint_2
+      - left_joint_3
+      - left_joint_4
+      - left_joint_5
+      - left_joint_6
+      - left_joint_7
+      - right_joint_1
+      - right_joint_2
+      - right_joint_3
       - right_joint_4
       - right_joint_5
-      #- left_joint_1
-      #- left_joint_2
-      #- left_joint_3
-      #- left_joint_4
-      #- left_joint_5
-      #- left_joint_6
-      #- left_joint_7
-      #- right_joint_1
-      #- right_joint_2
-      #- right_joint_3
-      #- right_joint_4
-      #- right_joint_5
-      #- right_joint_6
-      #- right_joint_7
+      - right_joint_6
+      - right_joint_7
     amplitudes:
       - 1000.0
       - 1000.0
       - 1000.0
       - 1000.0
-      #- 1000.0
-      #- 1000.0
-      #- 1000.0
-      #- 1000.0
-      #- 1000.0
-      #- 1000.0
-      #- 1000.0
-      #- 1000.0
-      #- 1000.0
-      #- 1000.0
-      #- 1000.0
-      #- 1000.0
-      #- 1000.0
-      #- 1000.0
+      - 1000.0
+      - 1000.0
+      - 1000.0
+      - 1000.0
+      - 1000.0
+      - 1000.0
+      - 1000.0
+      - 1000.0
+      - 1000.0
+      - 1000.0
     frequencies:
       - 1.0
       - 1.0
       - 1.0
       - 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
-      #- 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
     homing_effort: 600.0
     position_tolerance: 10000.0
