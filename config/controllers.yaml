@@ -33,6 +33,7 @@ position_controller:
       - joint_7
     command_interfaces:
       - position
+      - control_word
     state_interfaces:
       - position
       - velocity
@@ -114,6 +115,7 @@ velocity_controller:
       - joint_7
     command_interfaces:
       - velocity
+      - control_word
     state_interfaces:
       - position
       - velocity
@@ -176,6 +178,7 @@ effort_controller:
       - joint_7
     command_interfaces:
       - effort
+      - control_word
     state_interfaces:
       - position
       - velocity

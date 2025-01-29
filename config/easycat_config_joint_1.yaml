@@ -31,14 +31,14 @@ rpdo:  # RxPDO = receive PDO Mapping
       - {index: 0x0005, sub_index: 22, type: int32, default: .nan} # Target torque 6
       - {index: 0x0005, sub_index: 23, type: int32, default: .nan} # Target torque 7
       - {index: 0x0005, sub_index: 24, type: int32, default: .nan} # Target torque 8
-      - {index: 0x0005, sub_index: 25, type: uint16, default: 0} # Control word 1
-      - {index: 0x0005, sub_index: 26, type: uint16, default: 0} # Control word 2
-      - {index: 0x0005, sub_index: 27, type: uint16, default: 0} # Control word 3
-      - {index: 0x0005, sub_index: 28, type: uint16, default: 0} # Control word 4
-      - {index: 0x0005, sub_index: 29, type: uint16, default: 0} # Control word 5
-      - {index: 0x0005, sub_index: 30, type: uint16, default: 0} # Control word 6
-      - {index: 0x0005, sub_index: 31, type: uint16, default: 0} # Control word 7
-      - {index: 0x0005, sub_index: 32, type: uint16, default: 0} # Control word 8
+      - {index: 0x0005, sub_index: 25, type: uint16, default: .nan, command_interface: control_word} # Control word 1
+      - {index: 0x0005, sub_index: 26, type: uint16, default: .nan} # Control word 2
+      - {index: 0x0005, sub_index: 27, type: uint16, default: .nan} # Control word 3
+      - {index: 0x0005, sub_index: 28, type: uint16, default: .nan} # Control word 4
+      - {index: 0x0005, sub_index: 29, type: uint16, default: .nan} # Control word 5
+      - {index: 0x0005, sub_index: 30, type: uint16, default: .nan} # Control word 6
+      - {index: 0x0005, sub_index: 31, type: uint16, default: .nan} # Control word 7
+      - {index: 0x0005, sub_index: 32, type: uint16, default: .nan} # Control word 8
 
 tpdo:  # TxPDO = transmit PDO Mapping 
   - index: 0x1A00
